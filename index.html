@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1650px">
+    <title>오션트립</title>
+    
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUITE/fonts/variable/woff2/SUITE-Variable.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./images/Asset 9.ico" type="image/x-icon">
+</head>
+
+
+<body style="margin: 0;">
+<div id="main">
+
+    <img src="./images/trip_time.png" alt="여행갈시간문구">
+
+    <div style="text-align: center;" class="clock">
+        <span id="clock" style="font-size: 120px;">clock</span>
+        <span id="apm" style="font-size: 70px;"  >ampm</span>
+    </div>
+    
+    
+
+
+
+    <div class="left">
+   
+
+
+        <a href="oversea.html"><div class="wrap"></div></a>
+
+
+
+        <div class="oversea">
+            <div class="black_box"></div>
+
+        </div>
+
+        <div class="text">
+        <h1>해외여행</h1>
+        <img src="./images/wave_underbar.png" alt="물결">
+        <h2>총 130여개국 바다정복가능</h2>
+        <p>현재 가장 HOT한 BEST 여행지 확인<br> 
+            여러 카드사별 할인혜택 비교<br>
+            오늘 놓치면안될 타임딜 및 마감특가 </p>
+        </div>
+    </div>
+
+    <div class="left">
+        <a href="./domestic.html"><div class="wrap"></div></a>
+        <div class="oversea domestic">
+            <div class="black_box"></div>
+
+        </div>
+
+        <div class="text text_right">
+        <h1>국내여행</h1>
+        <img src="./images/wave_underbar.png" alt="물결">
+        <h2>출발임박초특가 및 가족할인상품</h2>
+        <p>가을바다 감성 만끽하며 힐링<br>
+            인기 오션뷰 호텔 프로모션 이벤트 진행중<br>
+            가족과 함께 가는 기분좋은 여행 </p>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<script>
+    var Target = document.getElementById("clock");
+    var Target_apm = document.getElementById("apm");
+    function clock() {
+        var time = new Date();
+        var hours = time.getHours();
+        var minutes = time.getMinutes();
+        var seconds = time.getSeconds();
+        var AmPm ="AM";
+        if(hours > 12){   
+            var AmPm ="PM";
+            hours %= 12;
+        }
+
+        Target.innerText = 
+        `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+
+        Target_apm.innerText = `${AmPm}`;
+
+    }
+    clock();
+    setInterval(clock, 1000); // 1초마다 실행
+</script>
+
+
+
+
+</body>
+</html>
