@@ -5,8 +5,8 @@
 > PostgreSQL 데이터베이스를 업그레이드하기 위해서는 기존 데이터베이스를 백업한 후 새로운 데이터베이스로 복원하는 절차를 따라야 합니다.<br/>
 > 이 문서는 해당 과정을, GitLab 공식 문서를 참고하여 작성하였습니다.<br/>
 > https://docs.gitlab.com/charts/installation/database_upgrade.html
-
-
+<br/>
+<br/>
 #### 1. 데이터베이스 백업
 ```
 GITLAB_RELEASE=v6.11.12
