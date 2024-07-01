@@ -8,6 +8,7 @@
 <br/>
 
 #### 1. 데이터베이스 백업
+- 다음 명령어는 기존의 PostgreSQL 데이터를 Minio의 gitlab-backups 버킷에 tar파일로 저장합니다.
 ```
 GITLAB_RELEASE=v6.11.12
 curl -s "https://gitlab.com/gitlab-org/charts/gitlab/-/raw/${GITLAB_RELEASE}/scripts/database-upgrade" | bash -s pre
