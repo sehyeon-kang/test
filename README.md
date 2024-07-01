@@ -51,5 +51,5 @@ curl -s "https://gitlab.com/gitlab-org/charts/gitlab/-/raw/${GITLAB_RELEASE}/scr
     - --set gitlab.migrations.enabled=false 옵션 제거 후 동일 버전(7.3.5) 업그레이드
     - 정상화되었는지 확인
 <br/>
-> - 7.3.5 이후 추천하는 업그레이드 경로
->     - 7.7.7, 7.11.4, 8.0.2
+- 7.3.5 이후 추천하는 업그레이드 경로
+     - 7.7.7, 7.11.4, 8.0.2
