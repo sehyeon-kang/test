@@ -45,6 +45,8 @@ curl -s "https://gitlab.com/gitlab-org/charts/gitlab/-/raw/${GITLAB_RELEASE}/scr
     - 백업했던 데이터베이스 복원
     - 데이터베이스 마이그레이션
     - scale down 했던 deployments 정상화
+<br/>
+
 - 이전의 과정에서 sidekiq, webservice 파드가 정상작동하지 않았다면
     - --set gitlab.migrations.enabled=false 옵션 제거 후 동일 버전 업그레이드
     - 정상화되었는지 확인
