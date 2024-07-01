@@ -18,7 +18,7 @@ curl -s "https://gitlab.com/gitlab-org/charts/gitlab/-/raw/${GITLAB_RELEASE}/scr
     - nginx-ingress-controller deployment의 annotation에 nginx.ingress.kubernetes.io/proxy-body-size: 64m 를 추가
 <br/>
 
-기존의 PostgreSQL 데이터 삭제
+#기존의 PostgreSQL 데이터 삭제
 
 ```
 kubectl delete statefulset RELEASE-NAME-postgresql
