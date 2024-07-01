@@ -12,5 +12,5 @@
 GITLAB_RELEASE=v6.11.12
 curl -s "https://gitlab.com/gitlab-org/charts/gitlab/-/raw/${GITLAB_RELEASE}/scripts/database-upgrade" | bash -s pre
 ```
-해당 명령어 실행 후 "413 Request Entity Too Large" 에러가 발생한다면<br/>
+- 해당 명령어 실행 후 "413 Request Entity Too Large" 에러가 발생한다면<br/>
 nginx-ingress-controller deployment의 annotation에 nginx.ingress.kubernetes.io/proxy-body-size: 64m 를 추가
