@@ -7,4 +7,4 @@
 > https://docs.gitlab.com/charts/installation/database_upgrade.html
 
 #### 1. 데이터베이스 백업
-------------
+----------
