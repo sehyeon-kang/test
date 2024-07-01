@@ -17,7 +17,9 @@ curl -s "https://gitlab.com/gitlab-org/charts/gitlab/-/raw/${GITLAB_RELEASE}/scr
 - 위 명령어 실행 후 "413 Request Entity Too Large" 에러가 발생한다면
     - nginx-ingress-controller deployment의 annotation에 nginx.ingress.kubernetes.io/proxy-body-size: 64m 를 추가
 <br/>
+
 기존의 PostgreSQL 데이터 삭제
+
 ```
 kubectl delete statefulset RELEASE-NAME-postgresql
 kubectl delete pvc data-RELEASE_NAME-postgresql-0
