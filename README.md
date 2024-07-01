@@ -24,3 +24,4 @@ kubectl delete pvc data-RELEASE_NAME-postgresql-0
 <br/>
 
 #### 2. GitLab 업그레이드
+> GitLab Chart 버전 7.3.5로 업그레이드, 업그레이드 시 --set gitlab.migrations.enabled=false 옵션 추가 
