@@ -15,3 +15,5 @@ nginx-ingress-controller deployment의 annotation에 nginx.ingress.kubernetes.io
 GITLAB_RELEASE=v6.11.12
 curl -s "https://gitlab.com/gitlab-org/charts/gitlab/-/raw/${GITLAB_RELEASE}/scripts/database-upgrade" | bash -s pre
 ```
+- 위 명령어는 다음의 작업을 수행합니다.
+-- PostgreSQL 데이터베이스의 내용을 덤프하여 백업하고, 덤프된 데이터베이스 파일을 tar 형식으로 압축하여 MinIO의 gitlab-backups 버킷에 저장
