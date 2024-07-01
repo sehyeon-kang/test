@@ -6,6 +6,7 @@
 > 이 문서는 해당 과정을, GitLab 공식 문서를 참고하여 작성하였습니다.<br/>
 > https://docs.gitlab.com/charts/installation/database_upgrade.html
 
+
 #### 1. 데이터베이스 백업
 ```
 GITLAB_RELEASE=v6.11.12
