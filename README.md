@@ -7,6 +7,7 @@
 > https://docs.gitlab.com/charts/installation/database_upgrade.html
 <br/>
 <br/>
+
 #### 1. 데이터베이스 백업
 ```
 GITLAB_RELEASE=v6.11.12
