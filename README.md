@@ -27,4 +27,12 @@ kubectl delete pvc data-RELEASE_NAME-postgresql-0
 <br/>
 
 #### 2. GitLab 업그레이드
-> GitLab Chart 버전 7.3.5로 업그레이드, 업그레이드 시 --set gitlab.migrations.enabled=false 옵션 추가 
+- GitLab Chart 버전 7.3.5로 업그레이드, 업그레이드 시 --set gitlab.migrations.enabled=false 옵션 추가 
+    - 업그레이드 후 sidekiq, webservice 파드가 정상작동하지 않아도 무시
+    - toolbox 파드에 대한 업그레이드가 완료되었고, 정상작동하는지 확인
+```
+kubectl rollout status -w deployment/RELEASE_NAME-toolbox
+```
+<br/>
+
+#### 3. 데이터베이스 복원
